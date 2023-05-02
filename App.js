@@ -33,7 +33,7 @@ export default function App() {
         <FlatList
           data={courseGoals}
           renderItem={(itemData) => {
-            return <GoalItem itemData={itemData} />;
+            return <GoalItem text={itemData.item.text} />;
           }}
           alwaysBounceVertical={false}
         />
